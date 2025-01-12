@@ -1,0 +1,15 @@
+<suite name="Grouping">
+<parameter name="browser"  value="Chrome"></parameter>
+	<test threadcount="3" name="myTest">
+	<groups>
+	<run>
+	<include name="smoke">
+	</include>
+	</run>
+	</groups>
+<classes>
+<class name="testcase.SubCategoryTest"></class>
+
+</classes>
+</test>
+</suite>

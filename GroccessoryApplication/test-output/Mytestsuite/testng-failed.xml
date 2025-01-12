@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Mytestsuite]">
+  <parameter name="browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="listeners.Listeners"/>
+    <listener class-name="listeners.RetryListener"/>
+  </listeners>
+  <test thread-count="5" name="myTest(failed)">
+    <classes>
+      <class name="testcase.ManageUsersTest">
+        <methods>
+          <include name="searchAdminUserWithInvalidUsernameAndUsertype"/>
+          <include name="driverquit"/>
+          <include name="deleteAdminUserBySearch"/>
+          <include name="initialiseBrowser"/>
+        </methods>
+      </class> <!-- testcase.ManageUsersTest -->
+    </classes>
+  </test> <!-- myTest(failed) -->
+</suite> <!-- Failed suite [Mytestsuite] -->
