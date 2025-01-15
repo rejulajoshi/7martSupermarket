@@ -12,7 +12,8 @@ public class Constant {
 	public static final String mup_createAdminUser="Admin user creation failed";
 	public static final String mnp_searchnews="Result found";
 	public static final String mup_searchAdminUser="Result found";
-	public static final String mup_deleteAdminUser="User not deleted";
+	public static final String mup_deleteAdminUser="User deletion failed";
+	public static final String mfp_editFooterText="Address updation failed";
     public static final String CONFIGFILE=System.getProperty("user.dir")+("\\src\\main\\resources\\Config.properties");
     public static final String TESTDATAFILE=System.getProperty("user.dir")+("\\src\\main\\resources\\TestData\\GroceryAppDetails.xlsx");
 

@@ -7,7 +7,13 @@
 </listeners>
 	<test threadcount="3" name="myTest">
 <classes>
+<class name="testcase.LoginTest"></class>
+<class name="testcase.ManageCategoryTest"></class>
+<class name="testcase.SubCategoryTest"></class>
+<class name="testcase.ManageFooterTextTest"></class>
+<class name="testcase.ManageNewsTest"></class>
 <class name="testcase.ManageUsersTest"></class>
+
 
 </classes>
 </test>

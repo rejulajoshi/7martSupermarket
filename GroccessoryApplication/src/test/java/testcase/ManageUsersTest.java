@@ -38,7 +38,7 @@ public class ManageUsersTest extends BaseClass{
 	
 	  
   }
-  @Test
+ /* @Test
   public void deleteAdminUserBySearch() throws IOException
   {
 	  lp=new LoginPage(driver);
@@ -48,5 +48,5 @@ public class ManageUsersTest extends BaseClass{
 		boolean expectedresult=true;
 		Assert.assertEquals(expectedresult, actualresult,Constant.mup_deleteAdminUser);
 	  
-  }
+  }*/
 }

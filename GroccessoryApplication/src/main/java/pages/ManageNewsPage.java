@@ -25,7 +25,7 @@ public class ManageNewsPage {
 	@FindBy(xpath="//button[@class='btn btn-danger btn-fix']")WebElement searchButton;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alertmessage;
 	@FindBy(xpath="//center[contains(text(), 'RESULT NOT FOUND')]")WebElement searchresult;
-	 
+	
 	 public ManageNewsPage clickOnNewNewsButton()
 	 {
 		 newNewsButton.click();
@@ -66,5 +66,5 @@ public class ManageNewsPage {
 	   {
 		   return searchresult.isDisplayed();
 	   }
-
+	
 }

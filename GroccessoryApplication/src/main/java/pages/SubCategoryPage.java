@@ -6,11 +6,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import Utilities.FileUploadUtility;
 import Utilities.GeneralUtility;
 
 public class SubCategoryPage {
 	public WebDriver driver;
 	GeneralUtility gu=new GeneralUtility();
+	FileUploadUtility fu=new FileUploadUtility();
 	public SubCategoryPage(WebDriver driver)
 	{
 		this.driver=driver;
@@ -53,7 +55,7 @@ public class SubCategoryPage {
    }
    public SubCategoryPage uploadFile()
    {
-	   imageFile.sendKeys("C:\\Users\\nkrej\\OneDrive\\Desktop\\Screenshot 2024-12-25 082555.png");
+	   fu.fileuploadSendkeys(imageFile);
 	   return this;
    }
    public SubCategoryPage clickOnSaveButton()
@@ -74,7 +76,7 @@ public class SubCategoryPage {
    }
    public SubCategoryPage searchCategorySelect() 
    {
-	   gu.selectDropdownWithIndex(searchresult,5);
+	   gu.selectDropdownWithIndex(searchCategory,5);
 	   return this;
    }
    public SubCategoryPage searchSubCategorySelect()

@@ -19,6 +19,8 @@ public HomePage(WebDriver driver) {
 @FindBy(xpath="//p[text()='Manage News']")WebElement manageNewsButton;
 @FindBy(xpath="//p[contains(text(), 'Admin Users')]")WebElement adminusersbutton;
 @FindBy(xpath="//p[contains(text(), 'Manage Users')]")WebElement manageuserbutton;
+@FindBy(xpath="//p[contains(text(), 'Manage Footer Text')]")WebElement managefootertext;
+
 public String getHomePageText()
 {
 	return homePageText.getText();
@@ -46,5 +48,9 @@ public ManageUsersPage clickOnAdminUserButton()
 	manageuserbutton.click();
 	return new ManageUsersPage(driver);
 }
-
+public ManageFooterTextPage clickOnManageFooterTextButton()
+{
+	managefootertext.click();
+	 return new ManageFooterTextPage(driver);
+}
 }

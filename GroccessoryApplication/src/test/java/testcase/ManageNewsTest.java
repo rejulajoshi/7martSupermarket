@@ -35,6 +35,7 @@ public class ManageNewsTest extends BaseClass{
 		 boolean actualresult=mnp.listNews();
 			boolean expectedresult=true;
 			Assert.assertEquals(expectedresult, actualresult,Constant.mnp_searchnews);
-		 
-  }
+ }
+  
+  
 }

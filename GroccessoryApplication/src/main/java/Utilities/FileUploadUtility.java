@@ -10,13 +10,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class FileUploadUtility {
-	public void fileuploadSendkeys() 
+	public void fileuploadSendkeys(WebElement element) 
 	{
-		/*WebDriver driver = new ChromeDriver();
-		driver.navigate().to("");
-		WebElement choosefile=driver.findElement(By.xpath(""));
-		choosefile.sendKeys("C:\\Users\\nkrej\\OneDrive\\Desktop\\Testing\\TestPlan-V1.docx");
-		*/
+		  element.sendKeys("C:\\Users\\nkrej\\OneDrive\\Desktop\\Screenshot 2024-12-25 082555.png");
+		
 	}
 	public void fileuploadUsingRobotkey() throws AWTException
 	{

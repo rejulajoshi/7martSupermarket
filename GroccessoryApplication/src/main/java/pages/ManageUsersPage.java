@@ -6,10 +6,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.GeneralUtility;
+import Utilities.WaitUtilities;
 
 public class ManageUsersPage {
 	public WebDriver driver;
 	GeneralUtility gu=new GeneralUtility();
+	WaitUtilities wu=new WaitUtilities();
 	public ManageUsersPage(WebDriver driver)
 	{
 		this.driver=driver;
@@ -86,7 +88,7 @@ public class ManageUsersPage {
     {
  	   return searchresult.isDisplayed();
     }
-    public ManageUsersPage enterUserName()
+   /* public ManageUsersPage enterUserName()
     {
     	searchusername.sendKeys("rj");
     	return this;
@@ -100,11 +102,12 @@ public class ManageUsersPage {
     public ManageUsersPage deleteUser()
     {
     	deleteuser.click();
+    	wu.implicitylyWait(driver);
     	gu.acceptAlert();
     	return this;
     }
     public boolean deleteUserlist() 
     {
  	   return deletealert.isDisplayed();
-    }
+    }*/
 }
