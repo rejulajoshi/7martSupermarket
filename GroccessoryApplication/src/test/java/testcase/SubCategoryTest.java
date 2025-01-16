@@ -14,7 +14,7 @@ public class SubCategoryTest extends BaseClass {
 	HomePage hp;
 	SubCategoryPage scp;
   @Test(groups="smoke")
-  public void createNewSubCategoryWithValidDetails() throws IOException 
+  public void verifyIfUserIsAbleToCreateNewSubCategoryWithValidDetails() throws IOException 
   {
 	  lp=new LoginPage(driver);
 		hp= lp.loginByUsingExceldata(); 
@@ -25,7 +25,7 @@ public class SubCategoryTest extends BaseClass {
 		 
   }
   @Test(retryAnalyzer=retry.Retry.class,groups="smoke")
-  public void searchSubCategoryWithInValidDetails() throws IOException 
+  public void verifyIfUserIsAbleToSearchSubCategoryWithInValidDetails() throws IOException 
   {
 	  lp=new LoginPage(driver);
 	hp=lp.loginByUsingExceldata();

@@ -15,7 +15,7 @@ public class ManageUsersTest extends BaseClass{
 	HomePage hp;
 	ManageUsersPage mup;
   @Test
-  public void createNewAdminUserWithValidDetails() throws IOException
+  public void verifyIfUserIsAbleToCreateNewAdminUserWithValidDetails() throws IOException
   {lp=new LoginPage(driver);
 	hp= lp.loginByUsingExceldata();
 	 
@@ -27,7 +27,7 @@ public class ManageUsersTest extends BaseClass{
 	  
   }
   @Test
-  public void searchAdminUserWithInvalidUsernameAndUsertype() throws IOException
+  public void verifyIfUserIsAbleToSearchAdminUserWithInvalidUsernameAndUsertype() throws IOException
   {lp=new LoginPage(driver);
 	hp= lp.loginByUsingExceldata();
 	 
@@ -38,15 +38,5 @@ public class ManageUsersTest extends BaseClass{
 	
 	  
   }
- /* @Test
-  public void deleteAdminUserBySearch() throws IOException
-  {
-	  lp=new LoginPage(driver);
-		hp= lp.loginByUsingExceldata();
-		mup= hp.clickOnAdminUserButton().searchUser().enterUserName().selectusertype().clickOnSearchButton().deleteUser();
-		boolean actualresult=mup.deleteUserlist();
-		boolean expectedresult=true;
-		Assert.assertEquals(expectedresult, actualresult,Constant.mup_deleteAdminUser);
-	  
-  }*/
+ 
 }

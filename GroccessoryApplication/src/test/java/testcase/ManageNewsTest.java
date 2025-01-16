@@ -16,7 +16,7 @@ public class ManageNewsTest extends BaseClass{
 	HomePage hp;
 	ManageNewsPage mnp;
   @Test
-  public void createNewManageNews() throws IOException
+  public void verifyIfUserIsAbleToCreateNewValidNews() throws IOException
   {
 	  lp=new LoginPage(driver);
 		hp= lp.loginByUsingExceldata();
@@ -27,7 +27,7 @@ public class ManageNewsTest extends BaseClass{
   }
   
   @Test
-  public void searchInvalidNews() throws IOException
+  public void verifyIfUserIsAbleToSearchInvalidNews() throws IOException
   {
 	  lp=new LoginPage(driver);
 	   hp=lp.loginByUsingExceldata();

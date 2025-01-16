@@ -15,7 +15,7 @@ public class ManageFooterTextTest extends BaseClass {
 	HomePage hp;
 	ManageFooterTextPage mfp;
   @Test
-  public void editFooterTextWithNewValidText() throws IOException 
+  public void verifyIfUserIsAbleToEditFooterTextWithNewValidText() throws IOException 
   {
 	  lp=new LoginPage(driver);
 		hp= lp.loginByUsingExceldata();

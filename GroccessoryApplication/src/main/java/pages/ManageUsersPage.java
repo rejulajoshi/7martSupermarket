@@ -88,26 +88,5 @@ public class ManageUsersPage {
     {
  	   return searchresult.isDisplayed();
     }
-   /* public ManageUsersPage enterUserName()
-    {
-    	searchusername.sendKeys("rj");
-    	return this;
-    }
-    public ManageUsersPage selectusertype()
-    {
- 	   gu.selectDropdownWithIndex(searchusertype, 2);
- 	   return this;
- 	   
- 	   }
-    public ManageUsersPage deleteUser()
-    {
-    	deleteuser.click();
-    	wu.implicitylyWait(driver);
-    	gu.acceptAlert();
-    	return this;
-    }
-    public boolean deleteUserlist() 
-    {
- 	   return deletealert.isDisplayed();
-    }*/
+   
 }

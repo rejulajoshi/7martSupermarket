@@ -15,7 +15,7 @@ public class ManageCategoryTest extends BaseClass {
 	HomePage hp;
 	ManageCategory mc;
   @Test(retryAnalyzer=retry.Retry.class)
-	public void newManageCategoryWithValidDetails() throws IOException 
+	public void verifyIfUserIsAbleToAddNewCategoryWithValidDetails() throws IOException 
 	  {
 		  lp=new LoginPage(driver);
 			hp= lp.loginByUsingExceldata();
@@ -27,7 +27,7 @@ public class ManageCategoryTest extends BaseClass {
 			 
 }
   @Test
-  public void searchManageCategoryWithInValidDetails() throws IOException 
+  public void verifyIfUserIsAbleToSearchCategoryWithInValidDetails() throws IOException 
   {
 	  lp=new LoginPage(driver);
 		hp= lp.loginByUsingExceldata();
